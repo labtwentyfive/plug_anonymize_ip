@@ -22,3 +22,5 @@ erl_crash.dump
 # Ignore package tarball (built via "mix hex.build").
 plug_anonymize_ip-*.tar
 
+# Visual Studio Code ElixirLS
+.elixir_ls
