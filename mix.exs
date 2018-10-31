@@ -42,6 +42,7 @@ defmodule PlugAnonymizeIp.MixProject do
 
   def package do
     [
+      files: ~w(lib mix.exs README.md LICENSE),
       licenses: ["MIT"],
       maintainers: ["Michael Schaefermeyer", "Sven Grunewaldt"],
       links: %{
