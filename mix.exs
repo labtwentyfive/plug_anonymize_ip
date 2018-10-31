@@ -13,7 +13,8 @@ defmodule PlugAnonymizeIp.MixProject do
       preferred_cli_env: ["test.watch": :test],
       docs: [
         extras: ~W(README.md)
-      ]
+      ],
+      source_url: "https://github.com/labtwentyfive/plug_anonymize_ip"
     ]
   end
 
@@ -42,12 +43,10 @@ defmodule PlugAnonymizeIp.MixProject do
 
   def package do
     [
-      files: ~w(lib mix.exs README.md LICENSE),
       licenses: ["MIT"],
       maintainers: ["Michael Schaefermeyer", "Sven Grunewaldt"],
       links: %{
-        "Github" => "https://github.com/labtwentyfive/plug_anonymize_ip",
-        "Docs" => "https://hexdocs.pm/plug_anonymize_ip",
+        "GitHub" => "https://github.com/labtwentyfive/plug_anonymize_ip",
         "lab25" => "https://www.lab25.de/"
       }
     ]
