@@ -39,7 +39,8 @@ defmodule PlugAnonymizeIp.MixProject do
       {:plug, "~> 1.5 or ~> 1.7"},
       {:ex_doc, "~> 0.11", only: :dev},
       {:earmark, "~> 1.2", only: :dev},
-      {:mix_test_watch, "~> 0.9.0", only: :test}
+      {:mix_test_watch, "~> 0.9.0", only: :test},
+      {:excoveralls, "~> 0.10.2", only: :test}
     ]
   end
 
