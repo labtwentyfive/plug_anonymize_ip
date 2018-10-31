@@ -10,11 +10,18 @@ defmodule PlugAnonymizeIp.MixProject do
       deps: deps(),
       package: package(),
       description: description(),
-      preferred_cli_env: ["test.watch": :test],
+      preferred_cli_env: [
+        "test.watch": :test,
+        coveralls: :test,
+        "coveralls.detail": :test,
+        "coveralls.post": :test,
+        "coveralls.html": :test
+      ],
       docs: [
         extras: ~W(README.md)
       ],
-      source_url: "https://github.com/labtwentyfive/plug_anonymize_ip"
+      source_url: "https://github.com/labtwentyfive/plug_anonymize_ip",
+      test_coverage: [tool: ExCoveralls]
     ]
   end
 
