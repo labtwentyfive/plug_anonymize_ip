@@ -4,8 +4,10 @@ defmodule PlugAnonymizeIp do
   protection laws.
   """
 
+  @doc false
   def init(opts \\ []), do: Keyword.put_new(opts, :ip_field, :remote_ip)
 
+  @doc false
   def call(conn, opts) do
     ip_field = Keyword.fetch!(opts, :ip_field)
     Map.update(conn, ip_field, {0, 0, 0, 0}, &anonymize_ip/1)
